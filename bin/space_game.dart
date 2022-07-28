@@ -16,7 +16,7 @@ abstract class SpaceShip {
 // Armored SpaceShip Class
 class ArmoredSpaceShip extends SpaceShip {
   double maxArmorPower = 0.9;
-  late double randomArmorPower = random.nextDouble() * maxArmorPower;
+  late double randomArmorPower = random.nextDouble() * (1 - maxArmorPower);
 
   @override
   void hit() {
